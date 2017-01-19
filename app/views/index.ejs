@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %></title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+	</head>
+	<body>
+		<header>
+			<div id="siteTitle">
+				<h1>loginIn</h1>
+				<p>Login example</p>
+			</div>
+			<div id="userLogin">
+				<form action="/login" method="POST"> 
+					<div id="emailInput">
+						<p>Email or phone</p>
+						<input type="text" name="email"/>
+					</div>
+					<div id="passwordInput">
+						<p>Password</p>
+						<input type="password" name="password"/>
+					</div>
+					<div>
+						<input class="button" type='submit' value="Log In"/>
+					</div>
+				</form>
+			</div>
+		</header>
+
+		
+		<div class="inlineBox" id="leftCol">
+			
+			<div id="sloganDiv">
+				
+			</div>
+			
+		</div>
+
+		<div class = "inlineBox" id="rightCol">
+			
+			<h1 id="signUp">Sign Up</h1>
+
+			<form id="signupForm" action="/signup" method="POST">
+				<input tpye="text" required placeholder="First Name" name="firstName"/>
+				<input type="text" required placeholder="Last Name" name="lastName"/><br>
+				<input class="singleLineInput" type="text" placeholder="Mobile Number or Email" required name="email"/><br>
+				<input class="singleLineInput" type="password" placeholder="Enter Password" required name="password"/><br>
+				<input class="singleLineInput" type="password" placeholder="Re-Enter Password" required name="confirmedPassword"/><br>
+				<p></p>
+				<input type="submit" value="Join Now"/>
+			</form>
+
+			<div>
+				<div>Continue with</div>
+				<!-- Facebook icon by Icons8 -->
+				<a href="/auth/facebook"><img src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/facebook-48.png" title="Facebook" width="48"></a>
+				
+				<!-- Google icon by Icons8 -->
+				<a href=""><img src="https://maxcdn.icons8.com/Color/PNG/48/Logos/google_logo-48.png" title="Google" width="48"></a>
+				<!-- LinkedIn icon by Icons8 -->
+				<a href=""><img src="https://maxcdn.icons8.com/Color/PNG/48/Social_Networks/linkedin-48.png" title="LinkedIn" width="48"></a>
+			</div>		
+
+		</div>
+		 <% if (message) { %>
+        	<div><%= message %></div>
+    	<% } %>
+
+    	<% if (error_msg) { %>
+        	<div><%= error_msg %></div>
+    	<% } %>
+    	<% if (error) { %>
+        	<div><%= error%></div>
+    	<% } %>
+		<footer>
+			<div>login test</div>
+			<ul>
+				<li><a href="">User Agreements</a></li>
+				<li><a href="">Cookie Policy</a></li>
+				<li><a href="">Copyright Policy</a></li>
+				<li><a href="">Support</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

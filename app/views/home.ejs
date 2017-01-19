@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %></title>
+		<link rel='stylesheet' href='/stylesheets/normalize.css'/>
+		<link rel="stylesheet" href='/stylesheets/home.css'>
+	</head>
+	<body>
+		<header>
+			<div>
+				<form>				
+					<input type="text" name="searchInput" placeholder="search for people...and more">
+					<button type="submit"><a href=""></a></button>
+				</form>
+			</div>
+
+			<div class="parentDiv">
+
+				<div class="childDiv userProfileContainer">
+					<%
+						if(!locals.userProfileImg){
+					%>
+						<!-- User icon by Icons8 -->
+						<img class="userProfileImg" src="https://maxcdn.icons8.com/Android/PNG/32/Users/user-32.png" />
+					<% }else{%>
+						<img class="userProfileImg" src = '<%= userProfileImg %>' />
+					<%}%>
+				</div>
+
+				<div class="childDiv userNameContainer">
+					<a href=""><p><%=name%></p></a>
+				</div>
+
+				<div class="childDiv homeContainer">
+					<a href="">home</a>
+				</div>
+
+				<div class ="childDiv">
+					<!-- User Groups icon by Icons8 -->
+					<a href=""><img src="https://maxcdn.icons8.com/windows10/PNG/32/Users/groups-32.png"></a>
+				</div>
+
+				<div class="childDiv">
+					<a href=""><img src="https://maxcdn.icons8.com/windows10/PNG/32/Messaging/chat-32.png"></a>
+				</div>
+
+				<div class="childDiv">
+					<a href=""><img src="https://maxcdn.icons8.com/iOS7/PNG/32/Holidays/bell-32.png"></a>
+				</div>
+
+			</div>
+			
+
+			
+
+			
+			
+		</header>
+
+
+		<footer>
+
+		</footer>
+	</body>
+</html>

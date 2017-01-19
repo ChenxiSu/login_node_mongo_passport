@@ -1,0 +1,136 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+header{
+	background-color: #707070;
+	height: 45px;
+	width:100%;
+	position: relative;
+}
+header > div:first-child{
+	width: 20%;
+	margin-left: 20%;
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+}
+header form input{
+	width: 80%;
+	height:25px;
+	float: left;
+}
+header form button{
+	width: 12%;
+	height: 33px;
+	background-image: url(https://maxcdn.icons8.com/iOS7/PNG/25/Very_Basic/search-25.png);
+	background-repeat: no-repeat;
+}
+.parentDiv{
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	left:60%;
+}
+
+/* Fake (pseudo) element, that enables vertical-align */
+.parentDiv:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.childDiv{
+	display: inline-block;
+  	vertical-align: middle;
+  	margin-right: 20px;
+}
+.userNameContainer a p{
+	max-width: 70px;
+	white-space: nowrap;
+	overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+/*.userProfileContainer{
+	width: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left:45%;
+}
+.userNameContainer{
+	width:30px;
+	display: inline-block;
+
+	top:50%;
+	transform: translateY(-50%);
+	margin-left: 60%;
+
+}
+.userNameContainer a p{
+	width: 70px;
+	white-space: nowrap;
+	overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+.homeContainer{
+	display: inline-block;
+	width:30px;
+
+	top:50%;
+	transform: translateY(-50%);
+
+}*/
