@@ -1,3 +1,3 @@
 module.exports = {
-  'url' : 'mongodb://localhost/floureer'
+  'url' : 'mongodb://db:27017/floureer'
 }
